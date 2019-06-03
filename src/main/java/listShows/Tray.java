@@ -12,15 +12,15 @@ public class Tray {
 
     private String show;
     private String uri;
-    @Column(name = "TrayName")
-    private String TrayName;
+    private String imgsource;
+
+    private String trayName;
 
     public Tray() {
     }
 
-    public Tray(String show,String TrayName) {
+    public Tray(String show) {
         this.show = show;
-        this.TrayName=TrayName;
     }
 
     public void setId(int id) {
@@ -48,11 +48,20 @@ public class Tray {
     }
 
     public String getTrayName() {
-        return TrayName;
+        return trayName;
     }
 
-    public void setTrayName(String TrayName) {
-        this.TrayName = TrayName;
+    public void setTrayName(String trayName) {
+        this.trayName = trayName;
     }
+
+    public String getImgsourceource() {
+        return imgsource;
+    }
+
+    public void setImgsourceource(String imgsource) {
+        this.imgsource = imgsource;
+    }
+
 
 }

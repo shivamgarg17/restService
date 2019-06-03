@@ -9,5 +9,4 @@ public interface RepositoryClass extends JpaRepository<Tray, Integer> {
 
     List<Tray> findByShowContaining(String shows);
 
-//    List<listShows.Tray> findByTrayStartingwith(String show);
 }
